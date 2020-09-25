@@ -1,0 +1,321 @@
+:root {
+    --back: #00ffff;
+    --mid-gray: #ffffff;
+    --light-gray: #00ffff;
+    --white-gray: #00ffff;
+    --more-white-gray: #ffffff;
+  }
+  
+  
+  header.common_gnb { /* 맨 위에 있는 툴바 */
+    background-color: var(--back);
+  }
+  
+  div.entryScene { /* 엔트리 장면 */
+    background-color: var(--back);
+  }
+  
+  div.engineContainer { /* 왼쪽 패널(미리보기 화면, 오브젝트 선택 창) */
+    background-color: var(--back);
+  }
+  
+  div.entryPlaygroundWorkspace { /* 블록 조립소 */
+    background-color: var(--back);
+  }
+  
+  div.entryPlaygroundTabWorkspace { /* 탭 패널(블록, 모양, 소리, 속성 등) */
+    background-color: var(--back);
+  }
+  
+  div.entryPlaygroundButtonTabWorkspace {
+    background-color: #ffffff;
+  }
+  
+  div.entryObjectRotationWrapperWorkspace input,input.entryObjectNameWorkspace,input#common_srch { /* 입력 필드 */
+    background-color: var(--white-gray) !important;
+    border: 0px solid !important;
+    color: white !important;
+  }
+  
+  span.entrySceneAddButtonWorkspace {
+    width: 20px;
+    height: 20px;
+    margin-left: 9px;
+    margin-top: 9px;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSLroIjsnbTslrRfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IgoJIHk9IjBweCIgdmlld0JveD0iMCAwIDMwIDMwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAzMCAzMDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLnN0MHtmaWxsOiM4MzgzODM7fQo8L3N0eWxlPgo8Zz4KCTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xNSwwQzYuNzIsMCwwLDYuNzIsMCwxNWMwLDguMjgsNi43MiwxNSwxNSwxNXMxNS02LjcyLDE1LTE1QzMwLDYuNzIsMjMuMjgsMCwxNSwweiBNMjIuNSwxNi41aC02djYKCQljMCwwLjgzLTAuNjcsMS41LTEuNSwxLjVzLTEuNS0wLjY3LTEuNS0xLjV2LTZoLTZDNi42NywxNi41LDYsMTUuODMsNiwxNXMwLjY3LTEuNSwxLjUtMS41aDZ2LTZDMTMuNSw2LjY3LDE0LjE3LDYsMTUsNgoJCXMxLjUsMC42NywxLjUsMS41djZoNmMwLjgzLDAsMS41LDAuNjcsMS41LDEuNVMyMy4zMywxNi41LDIyLjUsMTYuNXoiLz4KPC9nPgo8L3N2Zz4K);
+    background-size: 20px auto;
+  }
+  
+  div.entryObjectDeleteWorkspace {
+    border: 0px solid;
+    background-color: #ffffff;
+  }
+  
+  ul.entryTabListWorkspace li:not(.entryTabSelected) {
+    background-color: var(--mid-gray);
+    color: var(--more-white-gray);
+  }
+  
+  li.entryTabSelected {
+    background-color: var(--light-gray);
+    color: white;
+  }
+  
+  div.entryObjectRotationWrapperWorkspace span {
+    color: white !important;
+  }
+  
+  a.btn_work_space {
+    background-color: var(--back) !important;
+    border: 0px solid #ffffff !important;
+  }
+  
+  .btn_workspace_lang.block:before {
+    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOSIgaGVpZ2h0PSIxOSIgdmlld0JveD0iMCAwIDE5IDE5Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgZmlsbC1ydWxlPSJub256ZXJvIj4KICAgICAgICAgICAgPHBhdGggZmlsbD0iI0ZGRiIgc3Ryb2tlPSIjMjMyMzIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGQ9Ik00LjM2NCAxNi43MWwtMS4xMDUgMS4yMThjLS4wMzMuMDM1LS4wMzMuMDM1LS4wNjkuMDY4YTEgMSAwIDAgMS0xLjQxMi0uMDY4TC4zOTUgMTYuNDA0VjcuODY5bDIuMTIzIDIuMDY1TDMuOTQgOC41NTNoMTAuMzc3YTQuMDc5IDQuMDc5IDAgMCAxIDAgOC4xNThINC4zNjR6Ii8+CiAgICAgICAgICAgIDxwYXRoIGZpbGw9IiMyMzIzMjMiIGQ9Ik0wIDcuMjYzaDF2Mi42ODRIMHoiLz4KICAgICAgICAgICAgPGcgZmlsbD0iI0ZGRiIgc3Ryb2tlPSIjMjMyMzIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPgogICAgICAgICAgICAgICAgPHBhdGggZD0iTTQuMzY0IDguNjU4TDIuNTE4IDEwLjY5LjM5NSA4LjM1MVYtLjE4NGwyLjEyMyAyLjA2NkwzLjk0LjVIMTQuMzE2YTQuMDc5IDQuMDc5IDAgMSAxIDAgOC4xNThINC4zNjR6Ii8+CiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==) no-repeat !important;
+  }
+  
+   a.select_link {
+     background-color: var(--back) !important;
+     border: 0px solid #ffffff !important;
+   }
+  
+  div.entryWorkspaceBoard {
+    background-image: url('https://drive.google.com/uc?export=download&id=1NaFlUOlI0n1hi2RdHHZfTvvL3kBXU_lt');
+    background-size: 100px 100px;
+    border: 0px;
+  }
+  
+  div.rcs-inner-container {
+    background-color: var(--back);
+  }
+  
+  
+  ul.entryCategoryListWorkspace {
+    background-color: var(--back);
+  }
+  
+  div.entryWorkspaceBlockMenu {
+    background-color: black;
+  }
+  
+  div.propertyContent {
+    border: 0px;
+  }
+  
+  li.entryCategoryElementWorkspace:not(.entrySelectedCategory) {
+    background-color: var(--back) !important;
+    color: #aaaaaa;
+    border: 0px solid ffffff;
+  }
+  
+  ul.entryCategoryListWorkspace:before {
+    border: 0px solid ffffff;
+  }
+  div.entryVariablePanelWorkspace {
+    background-color: var(--back);
+  }
+  
+  a.attr_link {
+    color: white !important;
+  }
+  
+  div.unfold > a{
+    background-color: #444444 !important;
+  }
+  
+  div.entryOverlayBoard {
+    background: rgba(0,0,0,0.5)
+  }
+  
+  div.entryPlaygroundSoundEdit {
+    background-color: #3a3a3a;
+  }
+  
+  span.entryPlaygroundSoundEditText {
+    color: white !important;
+  }
+  
+  header._2OWWq-egc7teQQP7HyL9f4 {
+    background-color: var(--back) !important;
+  }
+  
+  div._1x2RXYa5hQqHkrlHsAjlI_ {
+    background-color: #3a3a3af0 !important;
+  }
+  
+  div._1HR4SSimyPIq-C8Jz_Wbkm {
+    background-color: #3a3a3af0 !important;
+  }
+  
+  div._3NH1Xc4-gMGj_Q-1Ytj8Jm > input {
+    color: white !important;
+  }
+  
+  div._2cwFGEIRAFJ-2nqKus1Rd4:not(._1mwoLlWWTeIShSqFJYzXMl) {
+    color: white !important;
+  }
+  
+  div._1lMR0fqp7yeanHNxf4EfaY {
+    background-color: var(--back) !important;
+  }
+  
+  div.CodeMirror-linenumber { /* 엔트리 파이썬 코드 라인 숫자 표시란 */
+    background-color: #444444 !important;
+  }
+  
+  div.CodeMirror-gutters { /* 엔트리 파이썬 코드 라인 */
+    background-color: #444444 !important;
+  }
+  
+  ._1lMR0fqp7yeanHNxf4EfaY.CFgUd1hVFDY8vvAzC39f2 ._7EufyNjB5zr-AAkFvPmoz ._3n0ptOSeQRbGa6woKCgVqs ._2cwFGEIRAFJ-2nqKus1Rd4 input[type='text'], ._1lMR0fqp7yeanHNxf4EfaY.CFgUd1hVFDY8vvAzC39f2 ._520ujOQAquKf86wvGv7rS .q51x4EBiUeegCdzHBPH5y ._2cwFGEIRAFJ-2nqKus1Rd4 input[type='text'], ._1lMR0fqp7yeanHNxf4EfaY.CFgUd1hVFDY8vvAzC39f2 ._7EufyNjB5zr-AAkFvPmoz ._3n0ptOSeQRbGa6woKCgVqs ._2cwFGEIRAFJ-2nqKus1Rd4 input[type='number'], ._1lMR0fqp7yeanHNxf4EfaY.CFgUd1hVFDY8vvAzC39f2 ._520ujOQAquKf86wvGv7rS .q51x4EBiUeegCdzHBPH5y ._2cwFGEIRAFJ-2nqKus1Rd4 input[type='number'] {
+    color: white !important;
+  }
+  
+  ._1lMR0fqp7yeanHNxf4EfaY.CFgUd1hVFDY8vvAzC39f2 ._7EufyNjB5zr-AAkFvPmoz ._3n0ptOSeQRbGa6woKCgVqs ._2cwFGEIRAFJ-2nqKus1Rd4 label, ._1lMR0fqp7yeanHNxf4EfaY.CFgUd1hVFDY8vvAzC39f2 ._520ujOQAquKf86wvGv7rS .q51x4EBiUeegCdzHBPH5y ._2cwFGEIRAFJ-2nqKus1Rd4 label {
+    color: white !important;
+  }
+  
+  .select_link {
+    color: white !important;
+  }
+  
+  div.CodeMirror-scroll { /* 엔트리 파이썬 코드 */
+    background-color: var(--back) !important;
+  }
+  
+  pre.CodeMirror-line > span {
+    color: #87b8ed !important;
+  }
+  
+  div.CodeMirror-activeline-background {
+    background-color: #373737 !important;
+  }
+  
+  div.CodeMirror-selected {
+    background-color: #505050 !important;
+  }
+  
+  span.cm-def {
+    color: #508ff4 !important;
+  }
+  
+  span.cm-string {
+    color: #7fdb8f !important;
+  }
+  
+  span.cm-number {
+    color: #e27963 !important
+  }
+  
+  span.cm-keyword {
+    color: #af63ed !important
+  }
+  
+  span.cm-variable {
+    color: white !important
+  }
+  
+  span.cm-builtin {
+    color: #e27963 !important
+  }
+  
+  span.cm-operator {
+    color: #87b8ed !important;
+  }
+  
+  span.cm-property {
+    color: #3287ff !important
+  }
+  
+  div.popup_item__2cwFG  {
+    color: white !important;
+  }
+  
+  div.popup_disabled__1mwoL {
+    color: gray !important;
+  }
+  
+  div.entryCategoryListWorkspace {
+    background-color: var(--mid-gray);
+    border: 0px solid #ffffff !important;
+  }
+  
+  div.entryCategoryListWorkspace:before {
+    border: 0px solid #ffffff !important;
+  }
+  
+  /*3.0*/
+  
+  div.customScroll_customScroll__3sb-n {
+    background-color: var(--mid-gray) !important;
+  }
+  
+  div.entryCategoryListWorkspace {
+    
+  }
+  
+  div.popup_item__2zvYI {
+    /* color: #5a5a5a; */
+    color: white !important;
+    border-bottom: #ffffff solid 0px !important;
+  }
+  
+  div.popup_item__2zvYI > a {
+    color: white !important;
+  }
+  
+  div.popup_disabled__2y-bJ {
+    color: rgb(128, 128, 128) !important;
+  }
+  
+  div.popup_tooltip_box__3Mrun {
+    background-color: white !important;
+    border: 0px solid white !important;
+  }
+  
+  ul.entryPlaygroundPictureList {
+    border: 0px solid white !important;
+  }
+  
+  ul.entryPlaygroundSoundList {
+    border: 0px solid white !important;
+  }
+  
+  div.entryVariablePanelWorkspace {
+    border: 0px solid white !important;
+  }
+  
+  div.blockMenuContainer {
+    background-color: var(--back);
+    border: 0px solid white;
+    
+  }
+  
+  li.entryContainerListElementWorkspace {
+    background-color: var(--back) !important;
+  }
+  
+  div.entryObjectRotationWrapperWorkspace {
+    background-color: var(--light-gray) !important;
+    border: 0px solid white;
+  }
+  
+  span.entryObjectCoordinateSpanWorkspace {
+    color: white;
+  }
+  
+  span.entryObjectDirectionSpanWorkspace {
+    color: white;
+  }
+  
+  span.entryObjectRotateMethodLabelWorkspace {
+    color: white;
+  }
+  
+  li.entryContainerListElementWorkspace {
+    border: 0px solid white;
+  }
+  
+  div.rotationMethodWrapper {
+    border: 0px solid white;
+  }
